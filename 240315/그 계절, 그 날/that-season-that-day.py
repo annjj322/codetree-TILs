@@ -1,13 +1,12 @@
-y, m, d = map(int,input().split())
-yoon = False
-long_month = [1,3,5,7,8,10,12]
-short_month = [4,6,9,11]
-spring = [3,4,5]
-summer = [6,7,8]
-fall = [9,10,11]
-winter = [12,1,2]
-
 def main():
+    y, m, d = map(int,input().split())
+    yoon = False
+    long_month = [1,3,5,7,8,10,12]
+    short_month = [4,6,9,11]
+    spring = [3,4,5]
+    summer = [6,7,8]
+    fall = [9,10,11]
+    winter = [12,1,2]
     if m in long_month:
         if d > 31:
             print(-1)
