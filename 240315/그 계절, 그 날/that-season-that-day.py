@@ -26,7 +26,7 @@ else:
     if m in spring:
         print("Spring")
     elif m in summer:
-        print("Sumemr")
+        print("Summer")
     elif m in fall:
         print("Fall")
     elif m in winter:
