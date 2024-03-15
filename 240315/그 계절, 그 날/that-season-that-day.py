@@ -10,7 +10,7 @@ winter = [12,1,2]
 if y % 4 == 0 and m == 2: # 윤년, 2월 체크
     if y % 100 == 0: # 100으로 나눠지면서
         if y % 400 == 0: # 동시에 400으로 나눠지면
-            yoon = True 윤년
+            yoon = True # 윤년
     else:
         yoon = True # 100으로 안나눠지면 윤년
 
