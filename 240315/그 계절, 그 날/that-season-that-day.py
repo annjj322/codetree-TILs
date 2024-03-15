@@ -7,15 +7,8 @@ def main():
     summer = [6,7,8]
     fall = [9,10,11]
     winter = [12,1,2]
-    if m in long_month:
-        if d > 31:
-            print(-1)
-            return
-    elif m in short_month:
-        if d > 30:
-            print(-1)
-            return
-    elif y % 4 == 0:
+
+    if y % 4 == 0 and m == 2:
         if y % 100 == 0:
             if y % 400 == 0:
                 yoon = True
@@ -25,6 +18,14 @@ def main():
     if yoon == False and m == 2 and d > 28:
         print(-1)
         return
+    elif m in long_month:
+        if d > 31:
+            print(-1)
+            return
+    elif m in short_month:
+        if d > 30:
+            print(-1)
+            return
     else:
         if m in spring:
             print("Spring")
