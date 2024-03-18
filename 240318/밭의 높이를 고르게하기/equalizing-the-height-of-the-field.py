@@ -1,5 +1,7 @@
-n, t, h = map(int,input().split())
-if n > 10 and t > n:
+n, h, t = map(int,input().split())
+if t > n:
+    t = n
+elif t > 10:
     t = 10
 
 array_n = list(map(int,input().split()))
