@@ -6,7 +6,7 @@ for num in array_n:
 
 sum_array = []
 tmp = 0
-for j in range(len(minus_array)-2):
+for j in range(len(minus_array)-t+1):
     for i in range(t):
         tmp += minus_array[i+j]
     sum_array.append(tmp)
