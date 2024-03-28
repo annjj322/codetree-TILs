@@ -6,7 +6,6 @@ for num in binary[2:]:
 
 for i in range(len(array)):
     if array[i] == '0':
-        print(array[i])
         array[i] = '1'
         break
 result = ''.join(map(str,array))
