@@ -11,6 +11,6 @@ for num in n_array:
 
 for num in m_array:
     if num not in counter:
-        print(0)
+        print(0,end=' ')
     else:
         print(counter[num],end=' ')
