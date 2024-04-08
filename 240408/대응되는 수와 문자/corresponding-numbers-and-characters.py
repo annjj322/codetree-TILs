@@ -1,15 +1,16 @@
 n, m = map(int,input().split())
 dictionary = dict()
+rev_dict = dict()
 
 for i in range(n):
     i += 1
-    dictionary[input()] = i
+    train = input()
+    dictionary[train] = i
+    rev_dict[i] = train
 
 for _ in range(m):
     test = input()
     if test not in dictionary:
-        for k, v in dictionary.items():
-            if v == int(test):
-                print(k)
+        print(rev_dict[int(test)])
     else:
         print(dictionary[test])
